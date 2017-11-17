@@ -1,0 +1,80 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>Archetype Created Web Application</display-name>
+    
+    
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+    <servlet>
+    	
+    	<servlet-name>AbstractSpringServlet</servlet-name>
+    	<servlet-class>fr.epita.IamViquarWeb.web.controllers.AbstractSpringServlet</servlet-class>
+    </servlet>
+    <servlet>
+    	
+    	<servlet-name>Authenticate</servlet-name>
+    	<servlet-class>fr.epita.IamViquarWeb.web.controllers.Authenticate</servlet-class>
+    </servlet>
+    <servlet>
+    	
+    	<servlet-name>IdentityCreation</servlet-name>
+    	<servlet-class>fr.epita.IamViquarWeb.web.controllers.IdentityCreation</servlet-class>
+    </servlet>
+    <servlet>
+    	
+    	<servlet-name>IdentityModification</servlet-name>
+    	<servlet-class>fr.epita.IamViquarWeb.web.controllers.IdentityModification</servlet-class>
+    </servlet>
+    <servlet>
+    	
+    	<servlet-name>IdentityUpdate</servlet-name>
+    	<servlet-class>fr.epita.IamViquarWeb.web.controllers.IdentityUpdate</servlet-class>
+    </servlet>
+    <servlet>
+    
+    	<servlet-name>SearchIdentity</servlet-name>
+    	<servlet-class>fr.epita.IamViquarWeb.web.controllers.SearchIdentity</servlet-class>
+    </servlet>
+    
+    
+    
+    
+    <servlet-mapping>
+    	<servlet-name>AbstractSpringServlet</servlet-name>
+    	<url-pattern>/AbstractSpringServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>Authenticate</servlet-name>
+    	<url-pattern>/Authenticate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>IdentityCreation</servlet-name>
+    	<url-pattern>/IdentityCreation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>IdentityModification</servlet-name>
+    	<url-pattern>/IdentityModification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>IdentityUpdate</servlet-name>
+    	<url-pattern>/IdentityUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>SearchIdentity</servlet-name>
+    	<url-pattern>/SearchIdentity</url-pattern>
+    </servlet-mapping>
+    
+   
+   
+    </web-app>

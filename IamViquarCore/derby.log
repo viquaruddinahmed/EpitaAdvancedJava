@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Nov 17 10:07:15 CET 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015f-c455-7944-000006c91428 
+on database directory memory:C:\Users\viqua\Desktop\viquar java\IamViquarCore with class loader sun.misc.Launcher$AppClassLoader@4b1210ee 
+Loaded from file:/C:\Users\viqua\Downloads\db-derby-10.14.1.0-bin.zip\db-derby-10.14.1.0-bin\bin
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=C:\Users\viqua\Desktop\viquar\IamViquarCore
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
